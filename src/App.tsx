@@ -1,9 +1,28 @@
-// import { Article, Brand, Navbar, Feature, Cta } from './components'
+import { Brand, Navbar, Cta } from './components'
+import {
+  Footer,
+  Blog,
+  Features,
+  Header,
+  Possiblity,
+  WhatGpt3,
+} from './containers'
 
 export default function App() {
   return (
-    <div>
-      <h1>Gpt 3</h1>
+    <div className='App'>
+      <div className='gradient__bg'>
+        <Navbar />
+        <Header />
+      </div>
+      <Brand />
+      <WhatGpt3 />
+      <Features />
+
+      <Possiblity />
+      <Cta />
+      <Blog />
+      <Footer />
     </div>
   )
 }
